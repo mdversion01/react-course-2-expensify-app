@@ -18,7 +18,7 @@ run npm run dev-server
 # for testing 
 run npm test -- --watch
 
-#Production
+# Production
 To set up the app in a production enviroment with Heroku.
 - You'll need a Heruko account (if you don't already have one). You cna set up a free account here - https://www.heroku.com
 - Install the Heroku Cli - https://devcenter.heroku.com/articles/heroku-cli
