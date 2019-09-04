@@ -5,7 +5,6 @@
   "author": "Mathew Daugherty",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -26,7 +25,6 @@
     "eslint": "^6.2.0",
     "express": "^4.15.4",
     "extract-text-webpack-plugin": "^3.0.0",
-    "live-server": "^1.2.1",
     "moment": "^2.18.1",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
