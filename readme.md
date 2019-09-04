@@ -30,6 +30,7 @@ To set up the app in a production enviroment with Heroku.
 - run `git add .` to add new files to be committed
 - run `git commit -m "a message"` to commit new files
 - run `git push` to update your git repository
+- run `git push heroku master` to build the app
 - run `heroku open` this will open up the app in the browser.
 
 
