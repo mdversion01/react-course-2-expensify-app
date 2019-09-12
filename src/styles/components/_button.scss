@@ -1,0 +1,29 @@
+.button {
+    background: $blue;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1;
+    padding: $sm-size;
+    text-decoration: none;
+
+    &:hover {
+        background: #3179ab;
+        text-decoration: none;
+    }
+
+    &--link {
+        background: none;
+    }
+
+    &--secondary {
+        background: #888888;
+
+        &:hover {
+            background: #616161;
+        }
+    }
+}
