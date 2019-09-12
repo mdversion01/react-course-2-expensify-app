@@ -26,4 +26,25 @@
             background: #616161;
         }
     }
+
+    &--icon {
+        background: none;
+
+        &:hover {
+            background: #FFF;
+        }
+    }
+}
+
+.icons {
+    border: 1px solid $grey;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4px;
+}
+.icon-buttons {
+    height: 32px;
+    width: 32px;
 }
