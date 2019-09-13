@@ -15,11 +15,31 @@ exports[`Should correctly render login page 1`] = `
     <p>
       It's time to get your expenses under control.
     </p>
-    <button
-      className="button"
+    <div>
+      Login with:
+    </div>
+    <div
+      className="icons"
     >
-      Login with Google
-    </button>
+      <button
+        className="google button button--icon"
+      >
+        <img
+          className="icon-buttons"
+          src="/images/google-icon.png"
+          title="Login with Google"
+        />
+      </button>
+      <button
+        className="fb button button--icon"
+      >
+        <img
+          className="icon-buttons"
+          src="/images/fb-icon.png"
+          title="Login with Facebook"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;

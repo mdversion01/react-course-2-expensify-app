@@ -10,14 +10,14 @@ export const LoginPage = ({ startGoogleLogin, startFbLogin }) => (
             <div>Login with:</div>
             <div className="icons">
                 <button 
-                    className="button button--icon"
+                    className="google button button--icon"
                     onClick={startGoogleLogin}
                 >
                     <img className="icon-buttons" src="/images/google-icon.png" title="Login with Google" />
                 </button>
 
                 <button 
-                    className="button button--icon"
+                    className="fb button button--icon"
                     onClick={startFbLogin}
                 >
                     <img className="icon-buttons" src="/images/fb-icon.png" title="Login with Facebook" />
