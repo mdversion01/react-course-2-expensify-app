@@ -9,4 +9,10 @@
         margin: 0 0 $sm-size 0;
         font-style: italic;
     }
+
+    &__buttons {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
 }

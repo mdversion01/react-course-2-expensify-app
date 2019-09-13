@@ -6,6 +6,11 @@ import ExpenseListItem from './ExpenseListItem';
 
 export const ExpenseList = (props) => (
     <div className="content-container">
+        { 
+            props.expenses.length === 0 ? '' : (
+                <span className="note">Click an expense to edit.</span>
+            )
+        }
         <div className="list-header">
             <div className="show-for-mobile">Expenses</div>
             <div className="show-for-desktop">Expense</div>

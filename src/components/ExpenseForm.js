@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 
@@ -6,7 +7,7 @@ import { SingleDatePicker } from 'react-dates';
 const now = moment();
 // console.log(now.format('MMM Do, YYYY'));
 
-export default class ExpenseForm extends React.Component {
+class ExpenseForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,6 +18,7 @@ export default class ExpenseForm extends React.Component {
             calendarFocused: false,
             error: ''
         };
+        this.baseState = this.state;
     }
     
     onDescriptionChange = (e) => {
@@ -38,12 +40,18 @@ export default class ExpenseForm extends React.Component {
 
     onDateChange = (createdAt) => {
         if(createdAt) {
-            this.setState(() => ({ createdAt}));
+            this.setState(() => ({ createdAt }));
         }
     }
 
     onFocusChange = ({focused}) => {
         this.setState(() => ({ calendarFocused: focused }));
+    }
+
+    onCancel = (e) => {
+        e.preventDefault();
+        this.setState(this.baseState);
+        this.props.history.push('/');
     }
 
     onSubmit = (e) => {
@@ -102,13 +110,22 @@ export default class ExpenseForm extends React.Component {
                     >
                     </textarea>
 
-                    <div>
-                        <button className="button">
+                    <div className="form__buttons">
+                        <button className="button button--space">
                             Add Expense
+                        </button>
+
+                        <button
+                            className="button button--secondary"
+                            onClick={this.onCancel}
+                        >
+                            Cancel
                         </button>
                     </div>
                     
                 </form>
         )
     }
-}
+};
+
+export default withRouter(ExpenseForm);
