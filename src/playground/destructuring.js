@@ -6,7 +6,7 @@
 //         temp: 95
 //     }
 // }
-
+///////
 // 
 // ES6 Deconstructing an object
 
